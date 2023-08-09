@@ -1,0 +1,306 @@
+@import "_reset";
+@import "_mixins";
+
+#header {
+  width: 100%;
+  height: 100%;
+
+}
+.navbar {
+  width: 100%;
+  height: 100%;
+
+  &__elements {
+    width: 80%;
+    height: 100%;
+    padding: 3% 10%;
+    display: flex;
+    justify-content: space-between;
+    &__text {
+      font-size: 28px;
+      cursor: pointer;
+      @include mobile {
+        font-size: 16px;
+      }
+      @include tablet {
+        font-size: 36px;
+      }
+    }
+    &__items {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      column-gap: 40px;
+      @include mobile {
+        display: none;
+      }
+      @include tablet {
+        display: none;
+      }
+      &__links {
+        font-size: 18px;
+        text-decoration: none;
+        color: black;
+        font-weight: 650;
+        opacity: 0.8;
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+  &__icon {
+    display: none;
+    @include mobile {
+      display: contents;
+    }
+    @include tablet {
+      display: contents;
+    }
+    &__item {
+    }
+  }
+}
+.section1 {
+  width: 100%;
+  height: 100%;
+  &__top {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 15px;
+    background: black;
+    padding: 15px 0px;
+    &__text {
+      color: #fff;
+    }
+    &__link {
+      color: #fff;
+    }
+  }
+}
+.section2 {
+  width: 100%;
+  height: 100%;
+  background: #451314;
+  &__elements {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0px 4rem 0px 3rem;
+    @include mobile {
+      flex-wrap: wrap;
+      flex-direction: column-reverse;
+    }
+
+    @include tablet {
+      flex-wrap: wrap;
+      flex-direction: column-reverse;
+      padding: 0px 45px 2rem 45px;
+    }
+    &__img {
+      height: 100%;
+      width: 44%;
+      @include mobile {
+        width: 100%;
+      }
+      @include tablet {
+        width: 100%;
+      }
+    }
+    &__items {
+      display: flex;
+      flex-direction: column;
+      row-gap: 30px;
+      @include mobile {
+        justify-content: flex-start;
+      }
+      @include tablet {
+        width: 100%;
+        justify-content: flex-start;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+      }
+
+      &__h3 {
+        color: white;
+        font-size: 4rem;
+        @include mobile {
+          font-size: 2rem;
+        }
+        @include tablet {
+          font-size: 2rem;
+        }
+      }
+      &__p {
+        color: white;
+      }
+      &__button {
+        width: 105px;
+        padding: 15px;
+        border: none;
+        background: white;
+        &:hover {
+          background-color: #feccbf;
+          transition-delay: 0.12s;
+          transition-timing-function: ease;
+        }
+      }
+    }
+  }
+}
+.section3 {
+  width: 100%;
+  height: 100%;
+  &__elements {
+    display: flex;
+    margin-left: 9rem;
+    margin-top: 6rem;
+    margin-right: 9rem;
+    justify-content: space-between;
+    align-items: center;
+    @include mobile {
+      margin: 0;
+      flex-wrap: wrap;
+    }
+    @include tablet {
+      margin: 0;
+      flex-wrap: wrap;
+      display: flex;
+      flex-direction: column;
+    }
+
+    &__left {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      row-gap: 40px;
+      @include mobile {
+        margin-top: 4rem;
+        flex-wrap: wrap;
+        align-items: flex-start;
+        padding: 15px;
+      }
+      @include tablet {
+        margin-top: 4rem;
+        flex-wrap: wrap;
+        align-items: flex-start;
+        padding: 15px;
+      }
+      &__h {
+        font-size: 38px;
+        letter-spacing: 0.2px;
+        @include mobile {
+          font-size: 24px;
+        }
+      }
+      &__p {
+        font-size: 20px;
+        opacity: 0.7;
+        font-weight: 500;
+      }
+      &__button {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 105px;
+        padding: 15px;
+        border: none;
+        color: white;
+        background: black;
+        &:hover {
+          background-color: #272525;
+          transition-delay: 0.12s;
+          transition-timing-function: ease;
+        }
+      }
+    }
+    &__pics {
+      display: flex;
+      column-gap: 10px;
+      @include mobile {
+        margin: 0;
+        flex-wrap: wrap;
+        margin-left: 10px !important;
+      }
+      @include tablet {
+        margin: 0;
+        flex-wrap: wrap;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+      &__items {
+        height: 450px;
+        margin-bottom: 4rem;
+        width: 245px;
+        @include mobile {
+          width: 355px;
+          margin-top: 10px;
+        }
+        @include tablet {
+          width: 370px;
+          margin-top: 10px;
+        }
+      }
+    }
+  }
+}
+.section4 {
+  height: 60vh;
+  background-image: url(./assets/img/img-YDz318GZ0WuvBwLgzindex.\ webp.webp);
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  &__text {
+    color: #fff;
+    font-size: 40px;
+    letter-spacing: 0.4px;
+  }
+}
+.section5 {
+  width: 100%;
+  height: 100vh;
+  
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    padding: 90px;
+    @include mobile {
+    
+    }
+    &__items {
+      display: flex;
+      flex-direction: column;
+      row-gap: 30px;
+      &__img {
+        width: 740px;
+      }
+      &__h {font-size: 36px;
+
+      }
+      &__p {
+        opacity: 0.7;
+        font-weight: 700;
+      }
+      &__button {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 160px;
+        padding: 15px;
+        border: none;
+        color: white;
+        background: black;
+        &:hover {
+          background-color: #272525;
+          transition-delay: 0.12s;
+          transition-timing-function: ease;
+        }
+      }
+    }
+  }
+}
